@@ -20,11 +20,20 @@
 
 const numbersRandom = [];
 
-for (i = 0; i < numbersRandom.length; i++){
+//numbersRandom.push(randomNumber(1, 50));
+//randomNumber(1,50);
 
-  
+
+
+
+for (let i = 0; i < 5; i++) {
+    
+  function randomNumber(min,max){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  console.log(randomNumber(1,50,));
 }
 
-document.querySelector("h1").innerHTML = `
+document.querySelector(".numbers").innerHTML = `
   ${numbersRandom}
-` ;
+`;
